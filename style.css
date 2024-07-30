@@ -1,0 +1,2125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.intro{
+    height : 120vh;
+    background-image: url('./baackground.jpg');
+    background-size: 1900px;
+}
+
+.logo_part{
+    display : flex;
+    color : white;
+    align-items: center;
+    gap : 10px;
+}
+
+.logo_head{
+    font-size: 20px;
+}
+
+.nav_intro{
+    padding-top : 20px;
+    display : flex;
+    flex-direction: row;
+    gap : 80px;
+}
+
+.nav_intro a{
+    text-decoration: none;
+    color : white;
+}
+
+.Mercury:hover{
+    font-size: 20px;
+}
+
+.Venus:hover{
+    font-size: 20px;
+}
+
+.Earth:hover{
+    font-size: 20px;
+}
+
+.Mars:hover{
+    font-size: 20px;
+}
+
+.copyright_intro{
+    padding-top : 20px;
+    color : white;
+}
+
+header{
+    display : flex;
+    justify-content: space-between;
+    padding-right : 90px;
+    padding-left : 90px;
+    padding-top : 40px;
+}
+
+.write_intro{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    gap : 40px;
+    width : 60%;
+    height : 70%;
+    margin-top : 60px;
+    margin-left: 350px;
+    position : absolute;
+    animation: slideFromLeft 1s ease forwards;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap : 30px;
+    color : white;
+}
+
+.head_intro{
+    width : 90%;
+    line-height: 1.4cap;
+    font-size : 100px;
+}
+
+.desc_intro{
+    width : 95%;
+}
+
+.button_intro{
+    height : 60px;
+    width : 170px;
+    border : none;
+    color : white;
+    background-image: linear-gradient( 135deg, #0D25B9 10% , #ed2953 100%);
+    border-radius : 10px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideFromLeft 1s ease forwards;
+    margin-right : 50px;
+}
+
+.button_intro a{
+    text-decoration: none;
+    color : white;
+    font-size: 25px;
+}
+
+.button_intro:hover{
+    background-image: linear-gradient( 135deg, #5961F9 10%, #EE9AE5 100%);
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.moon_1_img_intro{
+    margin-top : 600px;
+    margin-left : 45%;
+    position : absolute;
+}
+
+.moon_2_img_intro{
+    height : 25%;
+    position : absolute;
+}
+
+.earth_intro{
+    height: 15%;
+    margin-top : 30px;
+    margin-left : 750px;
+    position : absolute;
+}
+
+.mars_img_intro{
+    height : 45%;
+    margin-left : 88.3%;
+    margin-top : 40px;
+    position : absolute;
+}
+
+.colourful_intro{
+    height : 45%;
+    margin-top : 430px;
+    margin-left: 77%;
+    position : absolute;
+}
+
+.saturn_intro{
+    height : 68%;
+    margin-top : 170px;
+    position: absolute;
+}
+
+.venus_intro{
+    height : 18%;
+    margin-top : 610px;
+    position : absolute;
+}
+
+@media screen and (max-width:1190px){
+    .nav_intro{
+        gap : 20px;
+    }
+    .head_intro{
+        font-size : 90px;
+    }
+    .write_intro{
+        margin-left : 240px;
+    }
+    .mars_img_intro{
+        margin-left : 84.7%;
+    }
+    .colourful_intro{
+        margin-left : 70.1%;
+    }
+    .earth_intro{
+        margin-left: 500px;
+    }
+    .moon_1_img_intro{
+        margin-left: 500px;
+    }
+} 
+
+@media screen and (max-width:1074px){
+    .head_intro{
+        font-size : 70px;
+    }
+    .mars_img_intro{
+        margin-left : 83%;
+    }
+    .colourful_intro{
+        margin-left : 67.1%;
+    }
+    .moon_1_img_intro{
+        margin-left: 400px;
+    }
+} 
+
+@media screen and (max-width:877px){
+    .head_intro{
+        font-size : 60px;
+    }
+    .mars_img_intro{
+        margin-left : 83%;
+        height : 35%;
+    }
+    .earth_intro{
+        margin-top : 10px;
+        margin-left: 400px;
+    }
+    .write_intro{
+        margin-left : 180px;
+    }
+    .saturn_intro{
+        height : 50%;
+    }
+    .moon_1_img_intro{
+        margin-left: 200px;
+        margin-top : 630px;
+        height : 20%;
+    }
+    .colourful_intro{
+        height : 35%;
+        margin-left : 66.5%;
+        margin-top : 524px;
+    }
+    .nav_intro{
+        content-visibility: hidden;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .intro{
+        height : 95vh;
+    }
+    .head_intro{
+        font-size : 30px;
+    }
+    header{
+        padding-left : 10px;
+    }
+    .moon_2_img_intro{
+        height : 15%;
+    }
+    .mars_img_intro{
+        height : 20%;
+        margin-left : 270px;
+    }
+    .colourful_intro{
+        height : 20%;
+        margin-top : 418px;
+    }
+    .saturn_intro{
+        height : 30%;
+    }
+    .moon_1_img_intro{
+        content-visibility: hidden;
+    }
+    .write_intro{
+        margin-left : 85px; 
+    }
+    .button_intro{
+        height : 8%;
+    }
+    .venus_intro{
+        height : 15%;
+        margin-top : 450px;
+    }
+}
+
+.sun{
+    height : 100vh;
+    background-image: url('./Sun_bg.png');
+    background-size: 1900px;
+}
+
+.sun_div{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sun_image{
+    height : 45%;
+    width : 70%;
+    position:absolute
+}
+
+.content_sun{
+    display : grid;
+    grid-template-rows: repeat(2 , 1fr);
+    height : 45%;
+    width : 60%;
+    padding-left : 60px;
+    margin-top : 300px;
+}
+
+.write{
+    display : flex;
+    flex-direction: column;
+    color : white;
+}
+
+.heading{
+    font-size : 30px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap : 10px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.card1{
+    height : 150px;
+    width : 325px;
+    display: flex;
+    padding-left : 20px;
+    flex-direction: row;
+    align-items: center;
+    gap : 40px;
+    color : white;
+    background-image: url('./card.png');
+    border-radius: 15px;
+}
+
+.donut_img{
+    height : 70px;
+}
+
+.head_sun_dia{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.diameter_sun{
+    line-height: 3cap;
+}
+
+.value_sun_dia{
+    font-size : 35px;
+}
+
+.card2{
+    height : 150px;
+    width : 325px;
+    display: flex;
+    padding-left : 20px;
+    flex-direction: row;
+    align-items: center;
+    gap : 40px;
+    color : white;
+    background-image: url('./card.png');
+    border-radius: 15px;
+}
+
+.temperature_sun{
+    line-height: 3cap;
+}
+
+.temp_img{
+    height : 70px;
+}
+
+.sun_temp{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.value_sun{
+    font-size : 35px;
+}
+
+.card1:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.card2:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+@media screen and (max-width:877px){
+    .card1{
+        width : 300px;
+        height : 120px;
+    }
+    .card2{
+        width : 300px;
+        height : 120px;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .sun_image{
+        height : 20%;
+        position: absolute;
+    }
+    .content_sun{
+        margin-top : 100px;
+        width : 100%;
+        display : flex;
+        flex-direction: column;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card1{
+        gap : 10px;
+        width : 200px;
+    }
+    .card2{
+        gap : 10px;
+        width : 200px;
+    }
+}
+
+.mercury{
+    height : 120vh;
+    background-image: url('./Mercury.png');
+    background-size : 1900px;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mercury_img{
+    height : 90%;
+    width : 40%;
+    margin-top: 50px;
+}
+
+.mercury_img:hover{
+    height : 100%;
+    width : 45%;
+    transition : 2s;
+}
+
+.main_merc{
+    width : 50%;
+    padding-right: 50px;
+    display : flex;
+    flex-direction: column;
+    gap : 40px;
+    color : white
+}
+
+.write_merc{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+
+.head_merc{
+    font-size: 30px;
+    animation: slideFromLeft 3s ease forwards;
+    animation-iteration-count: infinite;
+}
+
+.card_merc{
+    display : grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap : 20px;
+}
+
+.card1_merc{
+    height : 150px;
+    width : 298px;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap : 20px;
+    background-image: url('./card.png');
+    border-radius: 15px;
+}
+
+.donut_merc{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.head_dia_merc{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_dia_merc{
+    font-size : 40px;
+}
+
+.card1_merc:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.dia_merc{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.card2_merc{
+    height : 150px;
+    width : 298px;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap : 20px;
+    background-image: url('./card.png');
+    border-radius: 15px;
+}
+
+.head_day_temp_merc{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.day_temp_merc{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.val_day_temp_merc{
+    font-size: 40px;
+}
+
+.card2_merc:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.temp_merc_day{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.card3_merc{
+    margin-top : 20px;
+    height : 150px;
+    width : 298px;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap : 20px;
+    background-image: url('./card.png');
+    border-radius: 15px;
+}
+
+.head_night_temp_merc{  
+    font-size: medium;
+    font-weight: bold;
+}
+.night_temp_merc{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.val_night_temp_merc{
+    font-size: 40px;
+}
+
+.card3_merc:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.temp_merc_night{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+@media screen and (max-width : 1250px){
+    .mercury_img{
+        height : 80%;
+        width : 35%;
+    }
+    .main_merc{
+        margin-right: 75px;
+    }
+    .card1_merc{
+        width : 260px;
+    }
+
+    .card2_merc{
+        width : 260px;
+    }
+
+    .card3_merc{
+        width : 260px;
+    }
+}
+
+@media screen and (max-width : 950px){
+    .card_merc{
+        display: flex;
+        flex-direction: column;
+    }
+    .mercury_img{
+        height : 65%;
+    }
+    .head_night_temp_merc{
+        line-height: 1.5cap;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .main_merc{
+        margin-top : 10px;
+        padding-right : 0px;
+        margin-left : 100px;
+    }
+    .write_merc{
+        margin-top : 75px;
+        gap : 5px;
+        text-align: left;
+    }
+    .head_merc{
+        animation-duration: 0s;
+    }
+    .mercury_img{
+        height :20%;
+        margin-bottom: 500px;
+        position: absolute;
+    }
+    .desc_merc{
+        padding-left : 10px;
+    }
+    .card_merc{
+        gap : 2px;
+    }
+    .card1_merc{
+        width : 200px;
+        height : 120px;
+        gap : 2px;
+    }
+    .card2_merc{
+        width : 200px;
+        height : 120px;
+        gap : 2px;
+    }
+    .card3_merc{
+        width : 200px;
+        height : 120px;
+        gap : 2px;
+    }
+    .val_night_temp_merc{
+        font-size: 20px;
+    }
+    .val_day_temp_merc{
+        font-size: 20px;
+    }
+    .val_dia_merc{
+        font-size: 20px;
+    }
+}
+
+.venus{
+    height : 120vh;
+    background-image: url('./Venus.png');
+    background-size : 1900px;
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    gap : 40px;
+}
+
+.main_venus{
+    display: flex;
+    flex-direction: column;
+    gap : 40px;
+    align-items: center;
+    width : 50%;
+    padding-left : 100px;
+}
+
+.write_venus{
+    display : flex;
+    flex-direction: column;
+    gap: 20px;
+    height : 30%;
+    color : white;
+}
+
+.head_venus{
+    font-size: 30px;
+}
+
+.card_venus{
+    display : grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap : 40px;
+    width :100%;
+}
+
+.card1_venus{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 298px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 20px;
+    animation-name : slideFromRight;
+    animation-duration : 3s;
+    animation-iteration-count : infinite;
+    animation-delay : 2s;
+    animation-timing-function : ease;
+}
+
+.donut_venus{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.dia_write_venus{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_dia_venus{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_dia_venus{
+    font-size: 40px;
+}
+
+.card1_venus:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.card2_venus{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 298px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 20px;
+    animation-name : slideFromRight;
+    animation-duration : 3s;
+    animation-iteration-count : infinite;
+    animation-delay : 2s;
+    animation-timing-function : ease;
+}
+
+.temp_venus{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.temp_write_venus{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_temp_venus{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_temp_venus{
+    font-size: 40px;
+}
+
+.card2_venus:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.venus_img{
+    display: block;
+    height : 93.5%;
+    width : 55%;
+    margin-top: 50px;
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width : 990px){
+    .venus_img{
+        height : 70%;
+        width : 50%;
+        margin-left : 70px;
+        margin-top : 250px;
+    }
+    .main_venus{
+        padding-left : 40px;
+    }
+}
+
+@media screen and (max-width : 750px){
+    .venus_img{
+        display : none;
+    }
+}
+
+.earth{
+    height : 120vh;
+    background-image: url('./Earth.png');
+    background-size : 1900px;
+}
+
+.main_earth{
+    display : flex;
+    flex-direction: column;
+    height: 50%;
+    width : 100%;
+    align-items: center;
+    gap : 20px;
+    position : absolute;
+}
+
+.first{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top : 60px;
+    padding-left : 90px;
+    padding-right : 90px;
+}
+
+.write_earth{
+    height : 20%;
+    width : 50%;
+    color : white;
+}
+
+.head_earth{
+    font-size: 30px;
+}
+
+.card_earth{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.donut_earth{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.dia_earth{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_dia_earth{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_dia_earth{
+    font-size: 40px;
+}
+
+.card_earth:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.second{
+    height : 20%;
+    width : 65%;
+    color : white;
+    text-align: right;
+    padding-right: 350px;
+}
+
+.head_moon{
+    font-size: 30px;
+}
+
+.earth_img{
+    height: 151%;
+    margin-top : 20.4%;
+    position:absolute;
+}
+
+.rocket{
+    margin-top : 400px;
+    position: absolute;
+    animation-name : diagonal-to-top-right;
+    animation-duration : 5s;
+    animation-iteration-count : infinite;
+    animation-delay : 2s;
+    animation-timing-function: linear;
+}
+
+.arrow{
+    margin-top : 240px;
+    margin-left : 930px;
+    position : absolute;
+}
+
+.shadow_img{
+    height: 19%;
+    padding-top : 25%;
+    margin-left: 52px;
+    position: absolute;
+}
+
+.moon_earth{
+    margin-top : 315px;
+    margin-left : 1130px;
+}
+
+@keyframes diagonal-to-top-right {
+    0% {
+      transform: translateX(0) translateY(200px);
+    }
+  
+    50% {
+        transform: translateX(700px) translateY(-200px) ;
+    }
+
+    100%{
+        transform: translateX(1300px) translateY(200px) rotateZ(90deg);
+    }
+}
+
+@media screen and (max-width : 1295px){
+    .earth_img{
+        height: 130%;
+        margin-top : 31.5%;
+    }
+    .rocket{
+        animation-duration: 0s;
+    }
+    .shadow_img{
+        content-visibility: hidden;
+    }
+    .arrow{
+        margin-left : 720px;
+        margin-top : 300px;
+    }
+}
+
+@media screen and (max-width : 1150px){
+    .arrow{
+        content-visibility: hidden;
+    }
+}
+
+@media screen and (max-width : 1070px){
+    .earth_img{
+        height : 100%;
+        margin-top : 47%;
+    }
+}
+
+@media screen and (max-width : 950px){
+    .rocket{
+        content-visibility: hidden;
+    }
+    .second{
+        width : 90%;
+    }
+    .earth_img{
+        margin-top: 53%;
+    }
+}
+
+@media screen and (max-width : 815px){
+    .earth_img{
+        content-visibility: hidden;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_earth{
+        margin-left : 100px;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .earth{
+        height : 110vh;
+    }
+    .second{
+        content-visibility: hidden;
+    }
+    .first{
+        width : 150%;
+        margin-right : 0px;
+    }
+    .main_earth{
+        margin-left : 0px;
+    }
+    .earth_img{
+        content-visibility: visible;
+        margin-left : 0px;
+        height : 40%;
+        margin-top : 600px;
+    }
+}
+
+.mars{
+    height : 120vh;
+    background-image: url('./Mars.png');
+    background-size : 1900px;
+}
+
+.mars_img{
+    position: absolute;
+    margin-top : 350px;
+}
+
+.mars_main{
+    display : flex;
+    flex-direction: row;
+    position: absolute;
+}
+
+.write_mars{
+    display : flex;
+    flex-direction: column;
+    height : 100%;
+    width : 65%;
+    justify-content: space-between;
+    padding: 0px;
+    margin : 0px;
+}
+
+.main_mars{
+    display : flex;
+    flex-direction: column;
+    gap : 10px;
+    color : white;
+    padding-top : 60px;
+    padding-left : 90px;
+    padding-right : 260px;
+}
+
+.head_mars{
+    font-size: 30px;
+}
+
+.moon_mars{
+    width : 20%;
+    margin-left : 600px;
+    margin-top : 480px;
+    display : flex;
+    flex-direction: column;
+    gap : 10px;
+    color : white;
+    position : absolute;
+}
+
+.head_moon_mars{
+    font-size : 20px;
+}
+
+.cards_mars{
+    padding-top : 99px;
+    display: flex;
+    flex-direction: column;
+    gap : 70px;
+}
+
+.card1_mars{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.donut_mars{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.dia_mars{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_dia_mars{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_dia_mars{
+    font-size: 40px;
+}
+
+.card1_mars:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.card2_mars{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.temp_mars{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.day_temp_mars{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_day_temp_mars{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_day_temp_mars{
+    font-size: 40px;
+}
+
+.card2_mars:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.card3_mars{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.cold_temp_mars{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.night_temp_mars{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_night_temp_mars{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_night_temp_mars{
+    font-size: 40px;
+}
+
+.card3_mars:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.arrow_img_mars{
+    margin-top : 430px;
+    margin-left : 500px;
+}
+
+@media screen and (max-width : 1285px){
+    .arrow_img_mars{
+        content-visibility: hidden;
+    }
+    .moon_mars{
+        content-visibility: hidden;
+    }
+}
+
+@media screen and (max-width : 950px){
+    .card1_mars{
+        width : 250px;
+    }
+    .card2_mars{
+        width : 250px;
+    }
+    .card3_mars{
+        width : 250px;
+    }
+    .main_mars{
+        padding-right: 180px;
+    }
+}
+
+@media screen and (max-width : 760px){
+    .mars_img{
+        content-visibility: hidden;
+    }
+    .mars_main{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_mars{
+        width : 100%;
+        padding-right: 0px;
+        padding-left: 150px;
+    }
+    .cards_mars{
+        padding-left : 200px;
+        gap : 10px;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .main_mars{
+        padding-left : 0px;
+        padding-right : 0px;
+    }
+    .cards_mars{
+        padding-top: 0px;
+        padding-left : 0px;
+    }
+}
+
+.jupiter{
+    height : 120vh;
+    background-image: url('./Jupiter.png');
+    background-size : 1900px;
+}
+
+.write_jupiter{
+    display : flex;
+    flex-direction: column;
+    gap : 80px;
+    padding-top : 60px;
+    padding-left : 90px;
+    width : 40%;
+    position : absolute;
+}
+
+.main_jupiter{
+    display : flex;
+    flex-direction: column;
+    gap : 10px;
+    color : white;
+}
+
+.head_jupiter{
+    font-size: 30px;
+}
+
+.card_jupiter{
+    display : flex;
+    flex-direction: column;
+    gap : 60px;
+}
+
+.card1_jupiter{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.donut_jupiter{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.write_dia_jupiter{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_dia_jupiter{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_dia_jupiter{
+    font-size: 40px;
+}
+
+.card1_jupiter:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.card2_jupiter{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.cold_temp_jupiter{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.write_temp_jupiter{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_night_temp_mars{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_temp_jupiter{
+    font-size: 40px;
+}
+
+.card2_jupiter:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.jupiter_img{
+    margin-left : 746px;
+    position: absolute;
+}
+
+.jupiter_shadow{
+    margin-left : 912px;
+}
+
+@media screen and (max-width : 1285px){
+    .jupiter_shadow{
+        content-visibility: hidden;
+    }
+    .jupiter_img{
+        height : 80%;
+        margin-left : 720px;
+    }
+}
+
+@media screen and (max-width : 1200px){
+    .jupiter_img{
+        height : 80%;
+        margin-left : 50.5%;
+    }
+}
+
+@media screen and (max-width : 800px){
+    .jupiter_img{
+        content-visibility: hidden;
+    }
+    .main_jupiter{
+        text-align : center
+    }
+}
+
+@media screen and (max-width : 370px){
+    .write_jupiter{
+        margin-top  :200px;
+        padding-left : 0px;
+        width : 100%;
+        gap : 20px;
+    }
+    .card_jupiter{
+        gap : 10px;
+    }
+    .jupiter_img{
+        content-visibility: visible;
+        height : 40%;
+        margin-left : 80px;
+    }
+}
+
+.saturn{
+    height : 120vh;
+    background-image: url('./Saturn.png');
+    background-size : 1900px;
+}
+
+.img_sat{
+    position : absolute;
+    padding-top : 20px;
+}
+
+.write_saturn{
+    width : 43%;
+    margin-left : 780px;
+    padding-top : 70px;
+}
+
+.main_saturn{
+    display : flex;
+    flex-direction: column;
+    gap : 10px;
+    color : white;
+    text-align: right;
+    padding-right : 30px;
+}
+
+.head_saturn {
+    font-size: 30px;
+}
+
+.card_saturn{
+    display: flex;
+    flex-direction: column;
+    gap : 60px;
+    padding-top : 80px;
+    padding-left : 200px;
+}
+
+.card1_saturn{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.donut_saturn{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.write_dia_saturn{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_dia_saturn{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_dia_saturn{
+    font-size: 40px;
+}
+
+.card1_saturn:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.card2_saturn{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.cold_temp_saturn{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.write_temp_saturn{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_temp_saturn{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_temp_saturn{
+    font-size: 40px;
+}
+
+.card2_saturn:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+@media screen and ( max-width : 1285px){
+    .img_sat{
+        height : 90%;
+    }
+    .write_saturn{
+        margin-left : 600px;
+    }
+}
+
+@media screen and (max-width : 1133px){
+    .card_saturn{
+        padding-left : 100px;
+    }
+}
+
+@media screen and (max-width : 1000px){
+    .card_saturn{
+        padding-left : 200px;
+    }
+    .img_sat{
+        margin-top : 100px;
+        height : 70%;
+    }
+    .write_saturn{
+        margin-left : 300px;
+        margin-right : 200px;
+    }
+    .card1_saturn{
+        width : 270px;
+    }
+    .card2_saturn{
+        width : 270px;
+    }
+    .main_saturn{
+        text-align: center;
+        width : 150%;
+    }
+}
+
+@media screen and (max-width : 832px){
+    .img_sat{
+        content-visibility: hidden;
+    }
+    .write_saturn{
+        margin-left : 100px;
+    }
+    .card_saturn{
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .write_saturn{
+        margin-left : 0px;
+        width : 70%;
+    }
+    .card_saturn{
+        gap : 10px;
+        margin-top  :100px;
+        padding-left : 0px;
+    }
+    .img_sat{
+        content-visibility: visible;
+        height : 30%;
+        margin-top : 300px;
+    }
+}
+
+.uranus{
+    height : 120vh;
+    background-image: url('./Uranus.png');
+    background-size : 1900px;
+}
+
+.write_uranus{
+    display: flex;
+    padding-top: 80px;
+    gap : 40px;
+}
+
+.main_uranus{
+    display : flex;
+    flex-direction: column;
+    padding-right : 40px;
+    padding-left : 100px;
+    gap : 10px;
+    color : white;
+}
+
+.head_uranus{
+    font-size: 30px;
+}
+
+.card_uranus{
+    display: flex;
+    flex-direction: row;
+    padding-top : 10px;
+    gap : 40px;
+    padding-right : 100px;
+}
+
+.card1_uranus{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 20px;
+}
+
+.donut_saturn{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.write_dia_uranus{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_dia_uranus{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_dia_uranus{
+    font-size: 40px;
+}
+
+.card1_uranus:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.card2_uranus{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.cold_temp_uranus{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.write_temp_uranus{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_temp_uranus{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_temp_uranus{
+    font-size: 40px;
+}
+
+.card2_uranus:hover{
+    box-shadow: 0px 4px 8px beige;
+}
+
+.uranus_img{
+    height : 56%;
+    margin-top : 110px;
+    margin-left : 230px;
+}
+
+@media screen and (max-width : 1285px){
+    .uranus_img{
+        margin-left : 36px;
+        height : 50%;
+    }
+}
+@media screen and (max-width : 1135px){
+    .uranus_img {
+        height : 35%;
+        margin-top : 16%;
+        margin-left : 22%;
+    }
+    .card_uranus{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width :762px){
+    .uranus_img{
+        content-visibility: hidden;
+    }
+    .write_uranus{
+        display : flex;
+        flex-direction: column;
+    }
+    .card_uranus{
+        margin-left : 180px;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .main_uranus{
+        padding-left : 0px;
+    }
+    .card_uranus{
+        margin-left : 0px;
+        gap : 10px;
+    }
+    .uranus_img{
+        content-visibility: visible;
+        height : 15%;
+        margin-left : 0px;
+    }
+}
+
+.neptune{
+    height : 137vh;
+    background-image: url('./Neptune.png');
+    background-size : 1900px;
+}
+
+.write_neptune{
+    display: flex;
+    flex-direction: column;
+    padding-top : 40px;
+    padding-right : 280px;
+    padding-left : 280px;
+    gap : 70px;
+    position:absolute;
+}
+
+.main_neptune{
+    display : flex;
+    flex-direction: column;
+    gap : 10px;
+    color : white;
+    text-align: center;
+}
+
+.head_neptune{
+    font-size : 30px;
+}
+
+.cards_neptune{
+    display : flex;
+    gap : 40px;
+    justify-content :  center;
+}
+
+.card1_neptune{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.donut_neptune{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.write_dia_neptune{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_dia_neptune{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_dia_neptune{
+    font-size: 40px;
+}
+
+.card2_neptune{
+    display : flex;
+    flex-direction: row;
+    background-image: url('./card.png');
+    border-radius: 15px;
+    height : 150px;
+    width : 325px;
+    justify-content: space-around;
+    align-items: center;
+    color : white;
+    gap : 40px;
+}
+
+.cold_temp_neptune{
+    height : 70px;
+    padding-left : 30px;
+}
+
+.write_temp_neptune{
+    padding-right : 20px;
+    display : flex;
+    flex-direction: column;
+    line-height: 3cap;
+}
+
+.head_temp_neptune{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.val_temp_neptune{
+    font-size: 40px;
+}
+
+.neptune_img{
+    height : 110%;
+    width : 100%;
+    margin-top : 216px;
+    padding-right : 330px;
+    position: absolute;
+}
+
+ .moon1_nept{
+    height : 200px;
+    width : 200px;
+    margin-top : 320px;
+    margin-left : 1200px;
+    animation-name : circular-movement;
+    animation-duration : 3s;
+    animation-iteration-count : infinite;
+    animation-delay : 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes circular-movement{
+    0% {        
+        transform: rotate(0deg);
+    }
+    100% {
+        transform : rotate(360deg) ;
+    }
+}
+@media screen and (max-width : 1285px){
+    .moon1_nept{
+        content-visibility: hidden;
+    }
+}
+
+@media screen and (max-width : 990px){
+    .neptune_img{
+        height : 75%;
+        width : 110%;
+        margin-top : 465px;
+    }
+    .cards_neptune{
+        flex-direction: column;
+        margin-left : 90px;
+        gap : 10px;
+    }
+}
+
+@media screen and (max-width : 800px){
+    .neptune_img{
+        content-visibility: hidden;
+    }
+    .write_neptune{
+        padding-left : 100px;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .neptune{
+        height : 115vh;
+    }
+    .write_neptune{
+        padding-left : 0px;
+        width : 170%;
+    }
+    .cards_neptune{
+        margin-left : 0px;
+    }
+    .neptune_img{
+        content-visibility: visible;
+        height : 30%;
+        width : 170%;
+        margin-top : 590px;
+    }
+}
+
+.footer{
+    height : 85vh;
+    background-image: url('./Footer.png');
+    background-size : 1520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height : 80%;
+    width : 90%;
+    padding-left: 100px;
+    padding-top : 40px;
+    padding-bottom: 40px;
+    background-color: rgb(52, 45, 45);
+    border-radius: 50px;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_footer{
+    width : 55%;
+    color : white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap : 10px;
+}
+
+.head_footer{
+    font-size : 50px;
+}
+
+.input_box{
+    display: flex;
+    height : 15%;
+    width: 40%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.input_footer{
+    width : 60%;
+    margin-left : 20px;
+    margin-top : 5px;
+    border: white;
+}
+
+.subscribe_footer{
+    height : 50px;
+    width : 170px;
+    border : none;
+    color : white;
+    margin-top : 5px;
+    background-image: linear-gradient( 135deg, #0D25B9 10% , #ed2953 100%);
+    border-radius : 30px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    animation: slideFromLeft 1s ease forwards;
+}
+
+.subscribe_footer a{
+    text-decoration: none;
+    color : white;
+    font-size: 25px;
+}
+
+.subscribe_footer:hover{
+    background-image: linear-gradient( 135deg, #5961F9 10%, #EE9AE5 100%);
+}
+
+.east_footer{
+    height : 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.last_box{
+    width : 100%;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color : white;
+}
+
+.logo_part_footer{
+    display : flex;
+}
+
+.logo_footer{
+    margin-top : 15px;
+    height : 50%;
+}
+
+.nav_bar{
+    padding-top : 15px;
+    display: flex;
+    gap : 60px;
+}
+
+.nav_bar a{
+    text-decoration: none;
+    color : white;
+}
+
+.copyright_footer{
+    margin-top : 15px;
+    margin-right : 70px;
+}
+
+@media screen and (max-width : 1015px){
+    .subscribe_footer{
+        content-visibility: hidden;
+        background-image: url('white');   
+    }
+    .nav_bar{
+        gap : 10px;
+    }
+}
+
+@media screen and (max-width : 750px){
+    .head_footer{
+        font-size: 30px;
+    }
+    .nav_bar{
+        content-visibility: hidden;
+    }
+}
+
+@media screen and (max-width : 370px){
+    footer{
+        padding-left : 0px;
+    }
+    .head_footer{
+        font-size: 23px;
+        font-weight: bold;
+        width : 150%;
+        padding-right  :100px;
+        margin-left : 0px;
+    }
+    .last_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap : 0px;
+    }
+}
